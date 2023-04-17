@@ -278,7 +278,7 @@ class Hospital:
 
 
     def update_data(self):
-        conn=mysql.connector.connect(host="localhost",username="root",password="Shadan8858@khan", database="mysystem")
+        conn=mysql.connector.connect(host="localhost",username="root",password="123", database="mysystem")
         my_cursor = conn.cursor()
         my_cursor.execute('update mydata set NameofTablets=%s,dose=%s,NumberofTablets=%s,lot=%s,IssueDate=%s,ExpDate=%s,dailyDose=%s,storage=%s,NHSnumber=%s,patientName=%s,DOB=%s,patientAdd=%s where Reference_No=%s',(
                                                 self.Nameoftablets.get(),
