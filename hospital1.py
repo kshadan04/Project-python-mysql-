@@ -253,7 +253,7 @@ class Hospital:
         if self.Nameoftablets.get()=="" or self.ref.get()=="":
             messagebox.showerror("Error","All fields are required")
         else:
-            conn=mysql.connector.connect(host="localhost",username="root",password="Shadan8858@khan", database="mysystem")
+            conn=mysql.connector.connect(host="localhost",username="root",password="123", database="mysystem")
             my_cursor = conn.cursor()
             
             my_cursor.execute("INSERT INTO mydata VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",(
@@ -323,7 +323,7 @@ class Hospital:
 
 
     def iDelete(self):
-        conn=mysql.connector.connect(host="localhost",username="root",password="Shadan8858@khan", database="mysystem")
+        conn=mysql.connector.connect(host="localhost",username="root",password="123", database="mysystem")
         my_cursor = conn.cursor()
         query = "DELETE FROM mydata WHERE Reference_No=%s"
         value = (self.ref.get(),)
