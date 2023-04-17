@@ -367,7 +367,7 @@ class Hospital:
 
 
     def fetch_data(self):
-        conn=mysql.connector.connect(host="localhost",username="root",password="Shadan8858@khan", database="mysystem")
+        conn=mysql.connector.connect(host="localhost",username="root",password="123", database="mysystem")
         my_cursor = conn.cursor()
         my_cursor.execute("SELECT * FROM mydata")
         rows = my_cursor.fetchall()
